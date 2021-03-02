@@ -28,5 +28,7 @@ hydra -L users.txt -P /usr/share/wordlists/rockyou.txt 192.168.109.131 ssh
 Success! Credentials `user:letmein` found.
 Unfortunately user doesn't belong to sudoers.
 New conception is to create vulnix account in my local attacker system, to imitate user in Vulnix machine. Using vulnerabilities in Vulnix configuration I mount vulnix /home partition into attacker machine.
+
 I use it to generate new ssh key: `ssh-keygen -t rsa`. I change name of public key on `authorized_keys` in .ssh catalog. Then there is possible to login with ssh key, without knowing password.
+
 My next step will be change in `/etc/exports` in order to mount `/root`, generate next pair of ssh keys, change name, and login with ssh key, in one word-repeat process for root.
