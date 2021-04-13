@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # This is my solution to SQL injection task on http://tasks.ctfd.kncyber.pl:7013/.
 # For correct work python sty module is needed.
 # It can be installed with:
