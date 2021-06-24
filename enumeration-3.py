@@ -4,7 +4,6 @@ import requests
 import string
 import sys
 
-
 # This program performs blind SQL Injection with bitwise AND.
 # Thanks to this fact it is able to find next character in String after 7 requests.
 # It is done by checking if consecutive bits of character representation are ones.
